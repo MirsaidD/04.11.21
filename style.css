@@ -1,0 +1,52 @@
+
+.dropdow{
+  display: inline-block;
+  position: relative;
+}
+.dropdow button{
+padding: 15px;
+border: none;
+background-color: tomato;
+color: white;
+font-weight: bold;
+font-size: 1.5rem;
+margin: 0;
+padding: 15px 20px;
+}
+.dropdow button:hover{
+  background-color: red;
+  cursor: pointer;
+}
+.dropdow ul{
+list-style-type:none;
+margin: 0;
+padding: 0;
+display: none;
+flex-direction: column;
+min-width: 250px;
+position: absolute;
+}
+.dropdow a{
+  padding: 15px;
+border: none;
+background-color: tomato;
+color: white;
+font-weight: bold;
+text-decoration: none;
+font-size: 1.5rem;
+padding: 15px 20px;
+display: block;
+}
+.dropdow a:hover{
+background-color: red;
+cursor: pointer;
+}
+.dropdow:hover ul{
+  display: flex;
+}
+.dropdow.dropdow-right{
+  float: right;
+}
+.dropdow.dropdow-right ul{
+right: 0;
+}
